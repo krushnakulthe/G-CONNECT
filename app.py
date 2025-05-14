@@ -141,7 +141,7 @@ def login_signup_page():
         username = st.text_input("Create Username")
         password = st.text_input("Create Password", type="password")
         branch = st.selectbox("Branch", ["CSE", "ECE", "MECH", "CIVIL", "EEE"], key="signup_branch")
-        year = st.selectbox("Year", ["1st", "2nd", "3rd", "4th"], key="signup_year")
+        year = st.selectbox("Year", ["FE", "SE", "TE", "BE"], key="signup_year")
         semester = st.selectbox("Semester", ["Sem 1", "Sem 2", "Sem 3", "Sem 4", "Sem 5", "Sem 6", "Sem 7", "Sem 8"], key="signup_semester")
         if st.button("Sign Up"):
             users = load_users()
@@ -208,7 +208,7 @@ def video_pdf_portal():
         name = st.text_input("Full Name", value=user_data.get("name", ""))
         password = st.text_input("New Password", type="password")
         branch = st.selectbox("Branch", ["CSE", "ECE", "MECH", "CIVIL", "EEE"], index=["CSE", "ECE", "MECH", "CIVIL", "EEE"].index(user_branch))
-        year = st.selectbox("Year", ["1ST", "2ND", "3RD", "4TH"], index=["FE", "SE", "TE", "BE"].index(user_year))
+        year = st.selectbox("Year", ["FE", "SE", "TE", "BE"], index=["FE", "SE", "TE", "BE"].index(user_year))
         semester = st.selectbox("Semester", ["Sem 1", "Sem 2", "Sem 3", "Sem 4", "Sem 5", "Sem 6", "Sem 7", "Sem 8"], index=["Sem 1", "Sem 2", "Sem 3", "Sem 4", "Sem 5", "Sem 6", "Sem 7", "Sem 8"].index(user_semester))
         if st.button("Update Profile"):
             if password and not is_strong_password(password):
