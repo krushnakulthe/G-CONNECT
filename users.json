@@ -1,0 +1,19 @@
+{
+  "admin": {
+    "password": "admin123",
+    "name": "Admin User",
+    "branch": "CSE",
+    "year": "TE",
+    "semester": "Sem 6",
+    "last_login": "2025-05-14T17:04:40.341214"
+  },
+  "krushna01": {
+    "password": "kvk@123",
+    "branch": "CSE",
+    "year": "TE",
+    "semester": "Sem 6",
+    "name": "krushna kulthe",
+    "disabled": false,
+    "last_login": "2025-05-14T16:45:39.841106"
+  }
+}
