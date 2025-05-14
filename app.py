@@ -141,7 +141,7 @@ def login_signup_page():
         username = st.text_input("Create Username")
         password = st.text_input("Create Password", type="password")
         branch = st.selectbox("Branch", ["CSE", "ECE", "MECH", "CIVIL", "EEE"], key="signup_branch")
-        year = st.selectbox("Year", ["FE", "SE", "TE", "BE"], key="signup_year")
+        year = st.selectbox("Year", ["1st", "2nd", "3rd", "4th"], key="signup_year")
         semester = st.selectbox("Semester", ["Sem 1", "Sem 2", "Sem 3", "Sem 4", "Sem 5", "Sem 6", "Sem 7", "Sem 8"], key="signup_semester")
         if st.button("Sign Up"):
             users = load_users()
